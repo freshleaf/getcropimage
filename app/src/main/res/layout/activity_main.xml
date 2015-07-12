@@ -9,28 +9,73 @@
               android:paddingTop="@dimen/activity_vertical_margin"
               tools:context="com.dengyuman.getcropimage.demo.MainActivity">
 
-    <Button
-        android:id="@+id/btnTakePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Picture"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btnTakePictureAndCrop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Take Picture and Crop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnPickPicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pick Picture"/>
+            <Button
+                android:id="@+id/btnTakePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Picture"/>
 
-    <Button
-        android:id="@+id/btnPickPictureAndCrop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pick Picture and Crop"/>
+            <Button
+                android:id="@+id/btnTakePictureAndCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Take Picture and Crop"/>
+
+            <Button
+                android:id="@+id/btnPickPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Picture"/>
+
+            <Button
+                android:id="@+id/btnPickPictureAndCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Picture and Crop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#b2baba"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="get image file:"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/tvImageFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvResultInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/ivResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
