@@ -2,7 +2,11 @@
 
 Get crop image AAR is the lib to call Android `"com.android.camera.action.CROP"` to crop image by taking a phote or picking a picture.
 
+More details please refer to `http://palestink.coding.io/pages/GetCropImage/`
+
 ## How to use
+There is a [Sample Code](https://github.com/freshleaf/getcropimage/blob/master/app/src/main/java/com/dengyuman/getcropimage/demo/MainActivity.java "a demo activity")
+
 ### Add lib dependence
 * in `Android Studio`: add `compile 'com.dengyuman:gercropimage:1.0@aar'` in build.gradle<br>
 or<br>
